@@ -1,0 +1,239 @@
+#ui_notifIt{
+    position: fixed;
+    top: 250px;
+    right: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    -wekbit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 2000;
+}
+#ui_notifIt:hover{
+    opacity: 1 !important;
+}
+#ui_notifIt p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+#notifIt_close{
+	position: absolute;
+	color: #FFF;
+	top: 0;
+	padding: 0px 5px;
+	right: 0;
+}
+#notifIt_close:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Color setup */
+/* You are free to change all of this */
+#ui_notifIt.success{
+    background-color: yellowgreen;
+    color: white;
+}
+#ui_notifIt.error{
+    background-color: orangered;
+    color: white;
+}
+#ui_notifIt.warning{
+    background-color: orange;
+    color: white;
+}
+#ui_notifIt.info{
+    background-color: deepskyblue;
+    color: white;
+}
+#ui_notifIt.default{
+    background-color: #EEE;
+    color: #444;
+}
+
+/* notifit confirm */
+.notifit_confirm_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2500;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0.6;
+}
+.notifit_confirm *{
+    font-family: sans-serif;
+    color: #f9f9f9;
+}
+.notifit_confirm{
+    position: fixed;
+    top: 122.5px;
+    left: 523.5px;
+    padding: 30px 25px 0px 30px;
+    background-color: rgba(56, 56, 56, 0.93);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2500;
+}
+
+.notifit_confirm_accept,
+.notifit_confirm_cancel{
+    padding: 10px 20px;
+    color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    outline: 0;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.notifit_confirm_accept{
+    background-color:#993535;
+    margin-left : 46%;
+}
+.notifit_confirm_accept:hover{
+    background-color: #409a9a;
+}
+
+.notifit_confirm_cancel{
+    background-color:#993535
+}
+.notifit_confirm_cancel:hover{
+    background-color: #409a9a;
+}
+
+.notifit_confirm_message{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+@media screen and (min-width: 1908px) {
+    .logo-mensaje {
+        width: 60px;
+        margin-left: 700px;
+        margin-bottom: -60px;
+    }
+}
+
+@media screen and (min-width: 1537px) and (max-width: 1908px){
+    .logo-mensaje {
+        width: 60px;
+        margin-left: 600px;
+        margin-bottom: -60px;
+    }
+}
+@media screen and (min-width: 1500px) and (max-width: 1537px) {
+    .logo-mensaje {
+        width: 60px;
+        margin-left: 550px;
+        margin-bottom: -60px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+    .logo-mensaje {
+        width: 60px;
+        margin-left: 315px;
+        margin-bottom: -60px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    .logo-mensaje {
+        width: 60px;
+        margin-left: 140px;
+        margin-bottom: -60px;
+    }
+}
+
+@media screen and (min-width: 685px) and (max-width: 737px) {
+    .logo-mensaje {
+        width: 60px;
+        margin-left: 100px;
+        margin-bottom: -40px;
+    }
+    .notifit_confirm_accept{
+   
+    margin-left : 1%;
+}
+
+}
+
+@media screen and (max-width: 684px) {
+    .logo-mensaje {
+        width: 60px;
+        margin-left: 66px;
+        margin-bottom: -40px;
+
+        
+    }
+     .notifit_confirm_accept{
+   
+    margin-left : 1%;
+}
+}
+@media screen and (max-width: 520px) {
+    .logo-mensaje {
+        width: 60px;
+        margin-left: -14px;
+        margin-bottom: -42px;
+    }
+    .notifit_confirm_accept{
+   
+    margin-left : 5%;
+}
+}
+@media screen and (max-width: 375px) {
+    .logo-mensaje {
+        width: 50px;
+        margin-left: 100px;
+        margin-bottom: -42px;
+    }
+    .notifit_confirm_accept{
+   
+    margin-left : 0%;
+}
+}
+@media screen and (max-width: 360px) {
+    .logo-mensaje {
+        width: 60px;
+        margin-left: -16px;
+        margin-bottom: -42px;
+    }
+    .notifit_confirm_accept{
+   
+    margin-left: 35%;
+}
+}
+
+@media screen and (max-width: 320px) {
+    .logo-mensaje {
+        width: 50px;
+        margin-left: -23px;
+        margin-bottom: -42px;
+    }
+    .notifit_confirm_accept{
+   
+    margin-left : 0%;
+}
+
+}
+
