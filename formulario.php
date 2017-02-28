@@ -14,7 +14,7 @@
     <link href="Content/css/stsLogin.css" rel="stylesheet">
     <link href="Content/css/site.css" rel="stylesheet">
 </head>
-<body>  
+<body>     
     <center>
         <form action="guardar.php" method = "POST">
             <input required type="text" name ="usuario" placeholder="Usuario..."/><br /><br />
